@@ -92,7 +92,7 @@ export default function App() {
       <nav>
         <h1>Lambda Eats</h1>
         <Link to="/">Home</Link>
-        <Link to="/pizza">Order</Link>
+        <Link to="/pizza">Pizza</Link>
         <Card style={{ height: "80%", margin: "0 auto" }}>
           <CardImg src={require("./Assets/Pizza.jpg")} />
         </Card>
