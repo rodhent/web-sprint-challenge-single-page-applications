@@ -3,7 +3,6 @@ describe("Pizza Order Form", () => {
     cy.visit("http://localhost:3000");
   });
 
-  //Element selectors
   const getTextBox = () => {
     return cy.get("#special-instructions");
   };
@@ -32,17 +31,15 @@ describe("Pizza Order Form", () => {
     return cy.get("#submit-button");
   };
 
-  //Input field test
   it("can type in input box", () => {
     getOrderLink().click();
     getTextBox()
-      .should("have.value", "") //starts empty
+      .should("have.value", "")
       .type("testing 1 2 3")
       .should("have.value", "testing 1 2 3")
       .clear();
   });
 
-  //Checxkbox field test
   it("can select multiple toppings", () => {
     getOrderLink().click();
     getPepperoni().should("not.be.checked").check().should("be.checked");
@@ -51,7 +48,6 @@ describe("Pizza Order Form", () => {
     getOnions().should("not.be.checked").check().should("be.checked");
   });
 
-  //Submit button test
   it("can submit form", () => {
     getOrderLink().click();
     getSubmit().should("be.disabled");
