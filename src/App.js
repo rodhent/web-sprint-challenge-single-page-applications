@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Switch, Route, Link } from "react-router-dom";
+import { Card, CardImg } from "reactstrap";
 import axios from "axios";
 import * as yup from "yup";
 import Form from "./components/Form";
@@ -92,6 +93,9 @@ export default function App() {
         <h1>Lambda Eats</h1>
         <Link to="/">Home</Link>
         <Link to="/pizza">Order</Link>
+        <Card style={{ height: "80%", margin: "0 auto" }}>
+          <CardImg src={require("./Assets/Pizza.jpg")} />
+        </Card>
       </nav>
 
       <Switch>
