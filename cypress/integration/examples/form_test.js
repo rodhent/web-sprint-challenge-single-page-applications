@@ -21,7 +21,7 @@ describe("Pizza Order Form", () => {
   };
 
   const getPineapple = () => {
-    return cy.get("#Pineapple-input");
+    return cy.get("#pineapple-input");
   };
 
   const getOnions = () => {

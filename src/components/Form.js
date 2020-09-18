@@ -118,10 +118,10 @@ export default function Form(props) {
               Cheese
               <input
                 type="checkbox"
-                name="Cheese"
+                name="cheese"
                 checked={formValues.Cheese}
                 onChange={onChange}
-                id="Cheese-input"
+                id="cheese-input"
               />
             </label>
 

@@ -1,7 +1,5 @@
-//Import dependencies
 import * as yup from "yup";
 
-//Schema object
 export default yup.object().shape({
   name: yup
     .string()
@@ -12,10 +10,10 @@ export default yup.object().shape({
     .oneOf(["small", "medium", "large"], "Please select a size"),
   sauce: yup
     .string()
-    .oneOf(["Original", "BBQ", "Alfredo"], "Please select a sauce"),
+    .oneOf(["Original", "BBQ", "Garlic"], "Please select a sauce"),
   pepperoni: yup.boolean(),
-  sausage: yup.boolean(),
-  peppers: yup.boolean(),
+  cheese: yup.boolean(),
+  pineapple: yup.boolean(),
   onions: yup.boolean(),
   specialInstructions: yup.string(),
 });
