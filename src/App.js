@@ -115,7 +115,10 @@ export default function App() {
             {post ? (
               <div className="order-summary">
                 <h3>Congrats. Your order is on its way.</h3>
-                <img src="https://media.giphy.com/media/9fuvOqZ8tbZOU/giphy.gif"></img>
+                <img
+                  src="https://media.giphy.com/media/9fuvOqZ8tbZOU/giphy.gif"
+                  alt="Dog with Pizza"
+                ></img>
                 <h4>Order Summary:</h4>
                 <pre style={{ overflow: "auto", width: "75%" }}>
                   {JSON.stringify(post)}
